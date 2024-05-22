@@ -15,6 +15,13 @@
       "when": 1716304656988,
       "tag": "0001_dry_bloodstorm",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1716309217418,
+      "tag": "0002_dear_praxagora",
+      "breakpoints": true
     }
   ]
 }
