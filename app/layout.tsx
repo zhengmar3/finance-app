@@ -6,6 +6,7 @@ import "./globals.css";
 import { QueryProvider } from "@/providers/query-providers";
 import { SheetProvider } from "@/providers/sheet-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>
+        <body className={cn(inter.className, "bg-slate-50")}>
           <QueryProvider>
             <SheetProvider />
             <Toaster />
