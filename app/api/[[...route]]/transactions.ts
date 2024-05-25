@@ -34,7 +34,7 @@ const app = new Hono()
       const { from, to, accountId } = c.req.valid("query");
 
       const defaultTo = new Date();
-      const defaultFrom = subDays(defaultTo, 30);
+      const defaultFrom = subDays(defaultTo, 365);
 
       const startDate = from
         ? parse(from, "yyyy-MM-dd", new Date())
